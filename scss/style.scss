@@ -1,0 +1,67 @@
+@import 'layout';
+@import 'config';
+
+
+* {
+  box-sizing: border-box;
+}
+
+// Example css for each column to visualize better
+
+// Remove for your project
+div[class^="col-"] {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 1rem 0;
+  background: lightblue;
+}
+
+// Center elements with set widths and margins
+.container {
+  width: calc(100% - 5rem);
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-column-gap: $col-gap;
+  grid-row-gap: $row-gap;
+}
+
+.no-gap {
+  grid-gap: 0;
+}
+
+
+
+// Typography
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  font-weight: 300;
+}
+
+h1 { font-size: 4.6rem;}
+h2 { font-size: 3.6rem;}
+h3 { font-size: 2.8rem;}
+h4 { font-size: 2.2rem;}
+h5 { font-size: 1.8rem;}
+h6 { font-size: 1.6rem;}
+
+p {
+  font-size: 1.6rem;
+}
+
+blockquote {
+  border-left: 2px solid gray;
+  width: auto;
+  text-align: start;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  margin-left: 1rem;
+  font-size: 2.2rem;
+}
+

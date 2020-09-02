@@ -1,0 +1,43 @@
+
+// set grid span property to all .col- classes from 1 to 12
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    grid-column: span $i;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  // set grid span property to all .col- classes from 1 to 12
+  @for $i from 1 through $columns {
+    .col-sm-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  // set grid span property to all .col- classes from 1 to 12
+  @for $i from 1 through $columns {
+    .col-md-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  // set grid span property to all .col- classes from 1 to 12
+  @for $i from 1 through $columns {
+    .col-lg-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  // set grid span property to all .col- classes from 1 to 12
+  @for $i from 1 through $columns {
+    .col-xl-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
