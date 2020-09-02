@@ -18,8 +18,8 @@ div[class^="col-"] {
 
 // Center elements with set widths and margins
 .container {
-  width: calc(100% - 5rem);
-  max-width: 75rem;
+  width: calc(100% - $container-margin);
+  max-width: $container-max-width;
   margin: 0 auto;
 }
 
