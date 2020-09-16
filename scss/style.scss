@@ -16,6 +16,10 @@ div[class^="col-"] {
   background: lightblue;
 }
 
+//
+// Placement
+//
+
 // Center elements with set widths and margins
 .container {
   width: calc(100% - $container-margin);
@@ -34,9 +38,46 @@ div[class^="col-"] {
   grid-gap: 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
+//
+// Cards
+//
+
+.card {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 5px 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
+  padding: 40px 60px;
 
 
+  .card__profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  .card__title {
+    font-size: 2.5rem;
+  }
+
+  .card__text {
+    max-width: 30%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: $gray;
+  }
+}
+
+//
 // Typography
+//
 
 html {
   font-family: "Roboto", sans-serif;
@@ -55,6 +96,10 @@ p {
   font-size: 1.6rem;
 }
 
+
+// 
+// Extras
+// 
 blockquote {
   border-left: 2px solid gray;
   width: auto;
